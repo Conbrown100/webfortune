@@ -1,0 +1,18 @@
+#!/user/bin/bash/env python3
+
+import os
+from subprocess import check_output
+
+f = open("cowsaid.txt", 'w')
+
+
+hello = check_output(['cowsay', '$(fortune outputfortune.dat)'])
+
+
+cowsaid = os.system('cowsay $(fortune outputfortune.dat)')
+cowsaid = str(cowsaid)
+hello = str(hello)
+f.write(cowsaid)
+f.write(hello)
+f.close()
+

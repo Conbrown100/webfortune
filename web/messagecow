@@ -1,0 +1,15 @@
+#!/usr/bin/bash/env python3
+
+
+import os
+from subprocess import check_output
+from sys import argv
+
+
+
+
+f = open('messagecow.txt' , 'w')
+hello = check_output(['cowsay', argv[1]])
+hello = str(hello)
+f.write(hello)
+f.close()

@@ -1,0 +1,6 @@
+#!/user/bin/bash/env python3
+
+import os
+
+os.system('fortune outputfortune.dat')
+

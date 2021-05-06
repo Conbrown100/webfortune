@@ -18,5 +18,7 @@ docker pull conbrown100/webfortune
 url routes 
 
 /fortune/ - returns a random fortune for the user to view
+
 /cowsay/[input cowsay] - user inputs what cowsay will say. Then is returned cowsay on their screen.
+
 /cowfortune/ - cowsay is automatically input a random fortune just like in /fortune/ but now cowsay says it.
